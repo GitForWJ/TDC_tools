@@ -12,7 +12,7 @@ This tool is developed on MATLAB. The MATLAB Runtime version 9.1 (R2016) is need
 
 2. Check the length of the TDL before setting the Start-point and the end-point. The built-in TDLs are from Bin 1 to Bin 460.
 
-3. Run the code density test first before running the time interval test.
+3. Run the code density test first before the time interval test.
 
 4. Jitters from the delay element, the input signal and the clock source can be modified. The default values are from our previous test results.
 
