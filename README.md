@@ -1,25 +1,19 @@
-# TDC_tools
+# TDC_tool
 
-This repository is for the article entittled "Multichannel high-linearity resolution-adjustable time-to-digital converters for LiDAR applications: software verifications and hardware implementations"
+This repository is for the article entitled "128-channel high-linearity resolution-adjustable time-to-digital converters for LiDAR applications: software predictions and hardware implementations"
 
-Authors: Wujun Xie, Haochang Chen and David Day-Uei Li.
+Authors: Wujun Xie, Yu Wang, Haochang Chen and David Day-Uei Li.
 
 The tool is developed by Wujun Xie.
 
-This tool is based on MATLAB. The MATLAB Runtime version 9.1 (R2016) is needed.
+This tool is developed on MATLAB. The MATLAB Runtime version 9.1 (R2016) is needed.
 
-1. Select the targe channel and the tested device first.
+1. Select the tested device and the target channel first.
 
-2. Check the length of the TDL before setting the Start-point and the end-point.
+2. Check the length of the TDL before setting the Start-point and the end-point. The built-in TDLs are from Bin 1 to Bin 460.
 
 3. Run the code density test first before running the time interval test.
 
-4. Jitters from delay elements and clock sources can be modified. The default values are from our previous test results. 
+4. Jitters from the delay element, the input signal and the clock source can be modified. The default values are from our previous test results.
 
-The TI tests are based on the equations below:
-
-$\sigma_{clk}^2 = \sigma_{clk}^2 + \sigma_{eq}^2 + \sigma_{DL}^2$
-
-$\sigma_{DL}^2 = (n/2)*\sigma_{CY}^2$
-
-$\sigma_{eq}^2 = sum^N_{i=1} \frac{W[i]^3}{12*W_{total}}$
+**Note:** Users can upload their original TDL data (code density test results,.mat file only) to the tool. The data should be named as "unnamed1" and stored in two columns; columns 1 is for count times and columns 2 is the corresponding address. An example is given, see Ch_example.mat.
